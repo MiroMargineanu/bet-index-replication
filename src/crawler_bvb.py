@@ -69,7 +69,12 @@ def crawl():
             if "ts" in cache and "data" in cache and cache["ts"] + 300 > crtTs:
                 logging.info("loading BVB data from cache")
                 return cache["data"]
-    with urllib.request.urlopen(BVB_URL) as response:
+    headers = {
+        "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36")
+    }
+    request = urllib.request.Request(BVB_URL, headers=headers)
+    with urllib.request.urlopen(request) as response:
         content = response.read()
         parser = BvbParser()
         parser.feed(content.decode())
