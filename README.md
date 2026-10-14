@@ -1,6 +1,8 @@
 # replicare-bet-bvb
 Programul curent se adresează persoanelor care doresc să replice parțial sau total indicele BET, investind în mod regulat.
 
+**Monthly workflow (prompts + weight table):** see [`MONTHLY_REBALANCE.md`](MONTHLY_REBALANCE.md). Agents: see [`AGENTS.md`](AGENTS.md).
+
 Programul primește deținerile actuale, sub forma unui fișier .csv, respectiv suma care se dorește investită și recomandă utilizatorului ce acțiuni să cumpere, pentru a obține un portofoliu cât mai echlibrat, respectând ponderile din indicele BET.
 
 # Utilizare

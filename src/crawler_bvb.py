@@ -9,9 +9,9 @@ import html.parser
 BVB_URL = "https://m.bvb.ro/FinancialInstruments/Indices/IndicesProfiles.aspx?i=BET"
 CRAWLER_CACHE = "crawler_bvb_cache.json"
 
-TABLE_ID = "gvTD"
+TABLE_ID = "gvC"
 COL_SYMBOL = "Simbol"
-COL_PRICE = "Pret"
+COL_PRICE = "Pret ref."
 COL_WEIGHT = "Pondere (%)"
 
 STATE_INIT = 0
